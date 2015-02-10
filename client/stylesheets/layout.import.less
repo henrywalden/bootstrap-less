@@ -1,0 +1,51 @@
+/***Splash Page***/
+
+//@todo temp centering hack to be changed with absolute positioning
+#splash-page {
+  padding-top: 300px;
+  height: 900px;
+
+}
+
+//splash page container
+#splash-background-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left:0;
+}
+
+
+
+
+
+//default-box layout
+.default-box {
+  height: 150px;
+  width: 150px;
+  background-color: @gray-light;
+  border-radius: 3px;
+}
+
+
+
+//splash menu box layout inherits from default box
+.splash-menu {
+  background-color: @gray-light;
+  border-radius: 3px;
+  text-align: center;
+}
+
+//postioning menu container
+#menu-container {
+  .center-block();
+}
+
+
+
+
+/***Parallax 1 Page***/
+.carousel {
+  padding: 90px 0;
+}

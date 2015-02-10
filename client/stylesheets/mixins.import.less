@@ -1,0 +1,61 @@
+//******Mixins******//
+
+
+//Mixin bordered
+// @params:
+// @return css border property
+.bordered() {
+  border: dotted 2px #333;;
+}
+
+//Mixin size
+// @params: certain width and height to set
+// @return css height and width property
+.size(@width; @height) {
+  width: @width;
+  height: @height;
+}
+
+//Mixin square
+// @params: size value to double
+// @return to size Mixin call
+.square(@size) {
+  .size(@arguments; @arguments);
+}
+
+//Mixin absolute positioning  - does not use translate hack
+//Mixin for custom height values that always center
+//changes height values to play around with
+// @params: none
+// @return centering an element
+.absolute-pos() {
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
+  // @params: top value: as pixels or percentages
+  // @return top value
+
+  .absolute-pos-top(@top-var) {
+    margin: auto;
+    position: absolute;
+    top: @top-var; left: 0; bottom: 0; right: 0;
+  }
+
+  // @params: bottom value: as pixels or percentages
+  // @return bottom value
+  .absolute-pos-top(@bottom-var) {
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: @bottom-var; right: 0;
+  }
+
+
+
+//Mixin slide color
+// @params: color to set background to
+// @return css background property
+.set-background-color(@color) {
+  background: @color repeat fixed;
+}

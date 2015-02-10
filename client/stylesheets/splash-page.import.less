@@ -1,0 +1,51 @@
+/**** splash page layout ****/
+
+//set fixed height
+#splash-page {
+	height: 992px;
+}
+
+
+//splash page container
+#splash-background-container {
+	position: absolute;
+	.full-scale();
+	top: 0;
+	left:0;
+}
+
+//relative background container where backgrounds sit in
+.background-rel-container {
+	position: relative;
+	.full-scale();
+}
+
+//default background settings
+//  @depends: uses fullscale background mixin and background set mixin
+.splash-background {
+	position: absolute;
+	.full-scale();
+	.splash-bg-set(@brand-primary);
+}
+
+
+
+//splash-page content holding menus
+//  @depends: uses absolute positioning from top
+#splash-content {
+	position: absolute;
+	.absolute-pos-top(30%);
+}
+
+
+// splash page brand
+// @depends: uses gray box mixin, size mixin to set height and width,
+//           and centering mixin
+.brand-logo {
+	.default-box();
+	.size(300px, 100px);
+	.center-block();
+
+	padding: 20px;
+	text-align: center;
+}

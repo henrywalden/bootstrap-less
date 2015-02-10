@@ -23,6 +23,30 @@
   .size(@arguments; @arguments);
 }
 
+//Mixin centering
+.center-block() {
+  display: block;
+  margin: 0 auto;
+}
+
+//Mixin full scale strech - used for backgrounds
+.full-scale() {
+  height: 100%;
+  width: 100%;
+}
+
+
+//Mixin only for splash-page backgrounds
+//  @params: hex value of a background color
+//  @depends: full-scale Mixin
+//  @return: returns css set background property
+
+.splash-bg-set(@bg-color) {
+  .full-scale();
+  background: @bg-color no-repeat fixed;
+}
+
+
 //Mixin absolute positioning  - does not use translate hack
 //Mixin for custom height values that always center
 //changes height values to play around with
@@ -45,7 +69,7 @@
 
   // @params: bottom value: as pixels or percentages
   // @return bottom value
-  .absolute-pos-top(@bottom-var) {
+  .absolute-pos-bottom(@bottom-var) {
     margin: auto;
     position: absolute;
     top: 0; left: 0; bottom: @bottom-var; right: 0;

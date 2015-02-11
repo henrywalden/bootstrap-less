@@ -16,6 +16,66 @@
 
 /***Splash Page***/
 
+//set fixed height
+#splash-page {
+  height: 992px;
+}
+
+/*** splash page background ***/
+
+//splash page container
+#splash-background-container {
+  position: absolute;
+  .full-scale();
+  top: 0;
+  left:0;
+}
+
+//relative background container where backgrounds sit in
+.background-rel-container {
+  position: relative;
+  .full-scale();
+}
+
+//default background settings
+//  @depends: uses fullscale background mixin and background set mixin
+.splash-background {
+  position: absolute;
+  .full-scale();
+  .splash-bg-set(@brand-primary);
+}
+
+
+/*** splash page menu ***/
+
+//splash-page content holding menus
+//  @depends: uses absolute positioning from top
+#splash-content {
+  position: absolute;
+  .absolute-pos-top(30%);
+}
+
+
+//splash page create grid
+#menu-container {
+  .make-row();
+}
+
+.splash-menu-container {
+  .make-md-column(2);
+  .make-sm-column(4);
+  .make-xs-column(6);
+}
+
+/****page-1****/
+.title-container {
+  .make-md-column(12);
+}
+.content-paragraph {
+  .make-md-column(12);
+}
+
+
 /***Parallax 1 Page***/
 .carousel {
   padding: 90px 0;

@@ -1,12 +1,12 @@
-/****default modules****/
+/****Default modules****/
 
-//parapgraph container defaults
+//Parapgraph container defaults
 .content-paragraph {
   margin: 0 0 30px;
   padding: 0 30px;
 }
 
-//title bottom border
+//Title bottom border
 .seperator-container {
   height: 5px;
   margin: 20px 0;
@@ -26,13 +26,19 @@
   margin: 0 0 20px 0;
 }
 
+//Carousel spacing
+.carousel {
+  padding: 90px 0;
+}
 
-/****parallax-1 page***/
-
-//Para-1 page
+//Para-1 Para-2 Para-3 page background color
 #para-page-1, #para-page-2, #para-page-3{
   .set-background-color(@brand-primary);
 }
+
+
+
+/***Parallax 1 Page***/
 
 //quotes block
 //quotes icon block
@@ -48,7 +54,7 @@
   color: @body-bg;
 }
 
-/****parallax-2-page***/
+/****Parallax-2-page***/
 
 //left content
 .content-left span {
@@ -57,7 +63,7 @@
   text-align: center;
 }
 
-/**** aside page ***/
+/**** Aside page ***/
 #aside-page-1, #aside-page-2 {
   .set-background-color(#ffff95);
 }
@@ -67,7 +73,7 @@
   text-align: center;
 
   .aside-title {
-    font-size: 18px;
+    font-size: @font-size-large;
     padding: 10px 0 0;
   }
 
@@ -77,7 +83,24 @@
   .quotes-icon;
 
   i {
-    font-size:21px;
+    font-size: @font-size-large;
     padding: 25px;
   }
+}
+
+/**** Page-3 ****/
+.page-icon-container {
+  .set-container(35px, 35px);
+  padding: 15px;
+  display: inline;
+}
+
+.page3-title {
+  display: inline;
+  font-size: @font-size-large;
+  padding: 0 0 0 30px;
+}
+
+.page3-content {
+  padding: 30px 0;
 }

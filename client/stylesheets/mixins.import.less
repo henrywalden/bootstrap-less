@@ -8,6 +8,23 @@
   border: dotted 2px #333;;
 }
 
+//default-box layout
+.default-box {
+  height: 150px;
+  width: 150px;
+  background-color: @gray-light;
+  border-radius: 3px;
+}
+
+//creates gray box container
+.set-container(@heightParam, @widthParam) {
+  height: @heightParam;
+  width: @widthParam;
+  background-color: @gray-light;
+  border-radius: 3px;
+}
+
+
 //Mixin size
 // @params: certain width and height to set
 // @return css height and width property

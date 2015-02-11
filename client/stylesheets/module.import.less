@@ -30,7 +30,7 @@
 /****parallax-1 page***/
 
 //Para-1 page
-#para-page-1{
+#para-page-1, #para-page-2, #para-page-3{
   .set-background-color(@brand-primary);
 }
 
@@ -49,7 +49,35 @@
 }
 
 /****parallax-2-page***/
+
+//left content
 .content-left span {
-  .set-container(250px 250px);
+  .set-container(250px, 250px);
   .center-block();
+  text-align: center;
+}
+
+/**** aside page ***/
+#aside-page-1, #aside-page-2 {
+  .set-background-color(#ffff95);
+}
+
+.aside-container {
+  padding: 70px 10px;
+  text-align: center;
+
+  .aside-title {
+    font-size: 18px;
+    padding: 10px 0 0;
+  }
+
+}
+
+.icon-container {
+  .quotes-icon;
+
+  i {
+    font-size:21px;
+    padding: 25px;
+  }
 }

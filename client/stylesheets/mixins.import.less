@@ -33,13 +33,6 @@
   height: @height;
 }
 
-//Mixin square
-// @params: size value to double
-// @return to size Mixin call
-.square(@size) {
-  .size(@arguments; @arguments);
-}
-
 //Mixin centering
 .center-block() {
   display: block;
@@ -92,6 +85,13 @@
     top: 0; left: 0; bottom: @bottom-var; right: 0;
   }
 
+//Mixin absolute positioning alt: gabriel's
+.ap-translate(@x, @y) {
+  position: absolute;
+  .translate(-@x, -@y);
+  left: @x;
+  top: @y;
+}
 
 
 //Mixin slide color

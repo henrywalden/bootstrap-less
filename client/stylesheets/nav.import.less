@@ -1,0 +1,25 @@
+// splash page brand
+// @depends: uses gray box mixin, size mixin to set height and width,
+//           and centering mixin
+.brand-logo {
+	.default-box();
+	.size(300px, 100px);
+	.center-block();
+
+	padding: 20px;
+	text-align: center;
+}
+
+// splash menu
+// @depends: uses size(width, height) mixin
+.splash-menu{
+	background-color: #777777;
+	border-radius: 3px;
+	margin: 10px auto;
+	padding: 20px;
+
+	a {
+		.size(120px, 70px)
+	}
+}
+

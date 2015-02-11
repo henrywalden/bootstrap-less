@@ -1,6 +1,6 @@
 /***Defaults***/
 .container {
-  padding: 30px 0;
+  padding: 30px 15px;
 }
 
 //title container
@@ -30,6 +30,7 @@
 #splash-background-container {
   position: absolute;
   .full-scale();
+  height: 922px;
   top: 0;
   left:0;
 }
@@ -60,17 +61,13 @@
 
 
 //splash page create grid
-#menu-container {
-  .make-row();
-}
-
 .splash-menu-container {
   .make-md-column(2);
   .make-sm-column(4);
   .make-xs-column(6);
 }
 
-/****page-1****/
+/****page-1 grid****/
 .title-container {
   .make-md-column(12);
 }
@@ -81,19 +78,24 @@
 
 
 
-/****parallax-2-page***/
+/****parallax-2-page grid***/
 //overrides col-md-12 created by content-paragraph
 .content-left, .content-right {
   .make-md-column(6)
 }
 
-/****aside container****/
-/****page3 container****/
+/****aside container grid****/
+/****page3 container grid****/
 .aside-container, .page3-container {
   .make-xs-column(12);
   .make-sm-column(3);
   .make-md-column(3);
-//  .make-lg-column(3);
+}
+
+/***page4 container grid***/
+#sort-button-menu {
+  .make-xs-column(12);
+  .make-md-column(12);
 }
 
 

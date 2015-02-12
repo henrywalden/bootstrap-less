@@ -1,13 +1,5 @@
 //******Mixins******//
 
-
-//Mixin bordered
-// @params:
-// @return css border property
-.bordered() {
-  border: dotted 2px #333;;
-}
-
 //default-box layout
 .default-box {
   height: 150px;
@@ -25,21 +17,13 @@
 }
 
 
-//Mixin size
-// @params: certain width and height to set
-// @return css height and width property
-.size(@width; @height) {
-  width: @width;
-  height: @height;
-}
-
 //Mixin centering
 .center-block() {
   display: block;
   margin: 0 auto;
 }
 
-//Mixin full scale strech - used for backgrounds
+//Mixin full scale stretch - used for backgrounds
 .full-scale() {
   height: 100%;
   width: 100%;
@@ -90,7 +74,7 @@
   position: absolute;
   .translate(-@x, -@y);
   left: @x;
-  top: @y;
+  bottom: @y;
 }
 
 

@@ -117,8 +117,47 @@
 }
 
 /**** Page-4 ****/
-//to limit container stretch
+//to center container
 #sort-button-container {
   text-align: center;
+}
+
+//page-4-box content
+.content-button-container {
+  text-align: center;
+}
+.page-4-content-box {
+  .set-container(250px, 250px);
+  background-color: @brand-primary;
+  border-radius: 0;
+  margin: 10px;
+  display: inline-block;
+
+
+  span {
+    .set-container(35px, 35px);
+    .absolute-pos();
+
+    i {
+      margin: 10px;
+
+      &:hover {
+//        color: ;
+      }
+    }
+  }
+
+
+  h5, p {
+    text-align: left;
+    padding: 3px 15px;
+  }
+
+
+  //sets inline contianer on hover
+  &:hover, &:focus {
+    background-color: rgba(0, 0, 0, 0.25);
+    transition: 300ms ease-in-out;
+  }
 }
 

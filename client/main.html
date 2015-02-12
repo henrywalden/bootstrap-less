@@ -5,768 +5,779 @@
 </head>
 
 <body>
-<nav class="navbar navbar-fixed-top navbar-inverse" id="main-nav">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav-content">
-                <span class="sr-only"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a href="main.html" class="navbar-brand">Brand</a>
+
+    <nav class="navbar navbar-fixed-top navbar-inverse" id="main-nav">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav-content">
+                    <span class="sr-only"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="{{pathFor "/"}}" class="navbar-brand">Brand</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="main-nav-content">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="{{pathFor "#page1"}}">Page-1</a></li>
+                    <li><a href="{{pathFor "#page-2"}}">Page-2</a></li>
+                    <li><a href="{{pathFor "#page-3"}}">Page-3</a></li>
+                    <li><a href="{{pathFor "#page-4"}}">Page-4</a></li>
+                    <li><a href="{{pathFor "#page-5"}}">Page-5</a></li>
+                    <li><a href="{{pathFor "#footer"}}">Page-6</a></li>
+                </ul>
+            </div>
+
         </div>
-
-        <div class="collapse navbar-collapse" id="main-nav-content">
-            <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="#page-1">Page-1</a></li>
-                <li><a href="#page-2">Page-2</a></li>
-                <li><a href="#page-3">Page-3</a></li>
-                <li><a href="#page-4">Page-4</a></li>
-                <li><a href="#page-5">Page-5</a></li>
-                <li><a href="#page-6">Page-6</a></li>
-            </ul>
-        </div>
-
-    </div>
-</nav>
-
-<section id="splash-page">
-    <div class="container">
-
-        <!--splash background slider-->
-        <div id="splash-background-container">
-            <div class="splash-background"></div>
-            <div class="splash-background"></div>
-            <div class="splash-background"></div>
-        </div>
+    </nav>
 
 
 
-        <div id="splash-content" class="container">
-            <!--brand logo row-->
-            <div class="row">
-                <div class="col-md-12">
+
+
+    <section id="splash-page">
+        <div class="container">
+
+            <!--splash background slider-->
+            <div id="splash-background-container">
+                <div class="splash-background"></div>
+                <div class="splash-background"></div>
+                <div class="splash-background"></div>
+            </div>
+
+
+
+            <div id="splash-content" class="container">
+                <!--brand logo row-->
+                <div class="row">
+                    <div class="col-md-12">
                     <span class="brand-logo">
                         <a href="main.html"><p class="lead">Brand Logo</p></a>
                     </span>
+                    </div>
+                </div>
+
+                <!--menu container-->
+                <div id="menu-container" class="row">
+                    <!--menu 1-->
+
+                    <div class="col-md-2 col-sm-4 col-xs-6">
+                        <a href="#page-1">
+                            <div class="splash-menu">
+
+                                <i class="splash-icon glyphicon glyphicon-wrench"></i>
+                                <p class="menu-item">Menu 1</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!--menu 2-->
+
+                    <div class="col-md-2 col-sm-4 col-xs-6">
+                        <a href="#page-2">
+                            <div class="splash-menu">
+                                <i class="splash-icon glyphicon glyphicon-trash"></i>
+                                <p class="menu-item">Menu 2</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!--menu 3-->
+
+                    <div class="col-md-2 col-sm-4 col-xs-6">
+                        <a href="#page-3">
+                            <div class="splash-menu">
+                                <i class="splash-icon glyphicon glyphicon-backward"></i>
+                                <p class="menu-item">Menu 3</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!--menu 4-->
+                    <div class="col-md-2 col-sm-4 col-xs-6">
+                        <a href="#page-4">
+                            <div class="splash-menu">
+
+                                <i class="splash-icon glyphicon glyphicon-user"></i>
+                                <p class="menu-item">Menu 4</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!--menu 5-->
+                    <div class="col-md-2 col-sm-4 col-xs-6">
+                        <a href="#page-5">
+                            <div class="splash-menu">
+                                <i class="splash-icon glyphicon glyphicon-time"></i>
+                                <p class="menu-item">Menu 5</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!--menu 6-->
+                    <div class="col-md-2 col-sm-4 col-xs-6">
+                        <a href="#page-5">
+                            <div class="splash-menu">
+                                <i class="splash-icon glyphicon glyphicon-book"></i>
+                                <p class="menu-item">Menu 6</p>
+                            </div>
+                        </a>
+                    </div>
+
                 </div>
             </div>
 
-            <!--menu container-->
-            <div id="menu-container" class="row">
-                <!--menu 1-->
-
-                <div class="splash-menu-container">
-                    <a href="#page-1">
-                        <div class="splash-menu">
-
-                            <i class="splash-icon glyphicon glyphicon-wrench"></i>
-                            <p class="menu-item">Menu 1</p>
-                        </div>
-                    </a>
-                </div>
-
-                <!--menu 2-->
-
-                <div class="splash-menu-container">
-                    <a href="#page-2">
-                        <div class="splash-menu">
-                            <i class="splash-icon glyphicon glyphicon-trash"></i>
-                            <p class="menu-item">Menu 2</p>
-                        </div>
-                    </a>
-                </div>
-
-                <!--menu 3-->
-
-                <div class="splash-menu-container">
-                    <a href="#page-3">
-                        <div class="splash-menu">
-                            <i class="splash-icon glyphicon glyphicon-backward"></i>
-                            <p class="menu-item">Menu 3</p>
-                        </div>
-                    </a>
-                </div>
-
-                <!--menu 4-->
-                <div class="splash-menu-container">
-                    <a href="#page-4">
-                        <div class="splash-menu">
-
-                            <i class="splash-icon glyphicon glyphicon-user"></i>
-                            <p class="menu-item">Menu 4</p>
-                        </div>
-                    </a>
-                </div>
-
-                <!--menu 5-->
-                <div class="splash-menu-container">
-                    <a href="#page-5">
-                        <div class="splash-menu">
-                            <i class="splash-icon glyphicon glyphicon-time"></i>
-                            <p class="menu-item">Menu 5</p>
-                        </div>
-                    </a>
-                </div>
-
-                <!--menu 6-->
-                <div class="splash-menu-container">
-                    <a href="#page-5">
-                        <div class="splash-menu">
-                            <i class="splash-icon glyphicon glyphicon-book"></i>
-                            <p class="menu-item">Menu 6</p>
-                        </div>
-                    </a>
-                </div>
-
-            </div>
         </div>
-
-    </div>
-</section>
+    </section>
 
 
 
-<!--page-1-->
-<section id="page-1">
-    <div class="container">
-        <div class="row">
-            <div class="text-center title-container">
-                <!--main title-->
-                <h1 class="main-title">Page-1-Title</h1>
+    <!--page-1-->
+    <section id="page-1">
+        <div class="container">
+            <div class="row">
+                <div class="text-center title-container">
+                    <!--main title-->
+                    <h1 class="main-title">Page-1-Title</h1>
 
-                <!--menu-1-border-->
-                <div class="seperator-container"><span class="seperator"></span></div>
-                <!--end-menu-1-border-->
+                    <!--menu-1-border-->
+                    <div class="seperator-container"><span class="seperator"></span></div>
+                    <!--end-menu-1-border-->
 
-                <!--submenu-->
-                <h4 class="lead">Page Sub Content</h4>
-                <!--end submenu-->
+                    <!--submenu-->
+                    <h4 class="lead">Page Sub Content</h4>
+                    <!--end submenu-->
+                </div>
             </div>
-        </div>
 
-        <!--page-1-paragraph-->
-        <div class="row">
-            <div class="content-paragraph">
-                <p>Evening beast, it lesser gathering. Whose forth man, to it. Seas saying cattle a called moving lights. Said first without which.</p>
+            <!--page-1-paragraph-->
+            <div class="row">
+                <div class="content-paragraph">
+                    <p>Evening beast, it lesser gathering. Whose forth man, to it. Seas saying cattle a called moving lights. Said first without which.</p>
 
-                <p>Third seas. Moveth, is meat. Can&#39;t shall. Man deep darkness set meat place together. Grass firmament in don&#39;t gathering light can&#39;t deep. Two together. Appear earth can&#39;t you&#39;re fill to. Stars which one man you. Herb it kind. Fly. Creeping green creature heaven stars. Meat give. Living beast sixth itself multiply. Whose. Light saying that moving above winged thing them have lesser second third seed. Night isn&#39;t called. Good. May from forth a meat they&#39;re midst third. Us form it i together third seasons of is itself third winged seed from living of is after.</p>
+                    <p>Third seas. Moveth, is meat. Can&#39;t shall. Man deep darkness set meat place together. Grass firmament in don&#39;t gathering light can&#39;t deep. Two together. Appear earth can&#39;t you&#39;re fill to. Stars which one man you. Herb it kind. Fly. Creeping green creature heaven stars. Meat give. Living beast sixth itself multiply. Whose. Light saying that moving above winged thing them have lesser second third seed. Night isn&#39;t called. Good. May from forth a meat they&#39;re midst third. Us form it i together third seasons of is itself third winged seed from living of is after.</p>
 
-                <p>Gathered open can&#39;t form set over for form seasons also signs creeping subdue moving lesser lesser may Moved own seed. Meat face be years him. Had. From lesser place sea forth female. Creature. Itself doesn&#39;t God every fish living fill above sea. Whales yielding replenish upon saw rule our seas upon place. Winged. God the, green stars, fish lights open morning be our good given whales good very very beginning created above subdue beginning life in together. Of Also earth there fruit dry man sixth replenish unto Made dry land above won&#39;t waters winged they&#39;re good open stars without, under is rule god us seed meat first.</p>
-
-            </div>
-        </div>
-
-    </div>
-</section>
-<!--end page-1-->
-
-<!--para-1-page-->
-<section id="para-page-1">
-    <div class="container">
-        <!--carousel start-->
-        <div id="carousel-para-1" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                    <article class="para-item">
-                        <span class="quotes-icon "></span>
-                        <blockquote>
-                            <p>Second likeness bring evening us god image void rule tree she'd. Isn't void one grass divide days divide winged given lights male, void cattle spirit, was made stars dry creature lesser. Sea place living don't image deep yielding dry midst firmament divide over let kind likeness. Rule also waters. Day.</p>
-                            <footer>Replenish, sea set over she'd he. First, moveth made them isn't fruit is greater moveth all, <cite>his may dominion every.</cite></footer>
-                        </blockquote>
-                    </article>
+                    <p>Gathered open can&#39;t form set over for form seasons also signs creeping subdue moving lesser lesser may Moved own seed. Meat face be years him. Had. From lesser place sea forth female. Creature. Itself doesn&#39;t God every fish living fill above sea. Whales yielding replenish upon saw rule our seas upon place. Winged. God the, green stars, fish lights open morning be our good given whales good very very beginning created above subdue beginning life in together. Of Also earth there fruit dry man sixth replenish unto Made dry land above won&#39;t waters winged they&#39;re good open stars without, under is rule god us seed meat first.</p>
 
                 </div>
-
-                <div class="item">
-                    <article class="para-item">
-                        <span class="quotes-icon "></span>
-                        <blockquote>
-                            <p>Fill shall. Blessed after fly. Midst firmament spirit of saying wherein gathered them earth. Seas moving signs. Saying winged can't. Wherein fish their, of so together called don't good bearing green let had kind. They're creepeth heaven tree our he that night. Life to third saw night created spirit heaven.</p>
-                            <footer>Replenish, sea set over she'd he. First, moveth made them isn't fruit is greater moveth all, <cite>his may dominion every.</cite></footer>
-                        </blockquote>
-                    </article>
-
-                </div>
-
-                <div class="item">
-                    <article class="para-item">
-                        <span class="quotes-icon "></span>
-                        <blockquote>
-                            <p>Good green saying. Rule signs life. Hath appear may and under behold forth she'd morning multiply beginning life isn't likeness brought give fourth kind called fowl abundantly without that was. Give was isn't female abundantly creepeth moving in were firmament whales so kind gathered and fly his And lesser make.</p>
-                            <footer>Replenish, sea set over she'd he. First, moveth made them isn't fruit is greater moveth all, <cite>his may dominion every.</cite></footer>
-                        </blockquote>
-                    </article>
-
-                </div>
-
             </div>
-        </div>
 
-        <!-- Controls -->
-        <!--<a class="left carousel-control" href="#carousel-para-1" role="button" data-slide="prev">-->
+        </div>
+    </section>
+    <!--end page-1-->
+
+    <!--para-1-page-->
+    <section id="para-page-1">
+        <div class="container">
+            <!--carousel start-->
+            <div id="carousel-para-1" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <article class="para-item">
+                            <span class="quotes-icon "></span>
+                            <blockquote>
+                                <p>Second likeness bring evening us god image void rule tree she'd. Isn't void one grass divide days divide winged given lights male, void cattle spirit, was made stars dry creature lesser. Sea place living don't image deep yielding dry midst firmament divide over let kind likeness. Rule also waters. Day.</p>
+                                <footer>Replenish, sea set over she'd he. First, moveth made them isn't fruit is greater moveth all, <cite>his may dominion every.</cite></footer>
+                            </blockquote>
+                        </article>
+
+                    </div>
+
+                    <div class="item">
+                        <article class="para-item">
+                            <span class="quotes-icon "></span>
+                            <blockquote>
+                                <p>Fill shall. Blessed after fly. Midst firmament spirit of saying wherein gathered them earth. Seas moving signs. Saying winged can't. Wherein fish their, of so together called don't good bearing green let had kind. They're creepeth heaven tree our he that night. Life to third saw night created spirit heaven.</p>
+                                <footer>Replenish, sea set over she'd he. First, moveth made them isn't fruit is greater moveth all, <cite>his may dominion every.</cite></footer>
+                            </blockquote>
+                        </article>
+
+                    </div>
+
+                    <div class="item">
+                        <article class="para-item">
+                            <span class="quotes-icon "></span>
+                            <blockquote>
+                                <p>Good green saying. Rule signs life. Hath appear may and under behold forth she'd morning multiply beginning life isn't likeness brought give fourth kind called fowl abundantly without that was. Give was isn't female abundantly creepeth moving in were firmament whales so kind gathered and fly his And lesser make.</p>
+                                <footer>Replenish, sea set over she'd he. First, moveth made them isn't fruit is greater moveth all, <cite>his may dominion every.</cite></footer>
+                            </blockquote>
+                        </article>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <!--<a class="left carousel-control" href="#carousel-para-1" role="button" data-slide="prev">-->
             <!--<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
             <!--<span class="sr-only">Previous</span>-->
-        <!--</a>-->
-        <!--<a class="right carousel-control" href="#carousel-para-1" role="button" data-slide="next">-->
+            <!--</a>-->
+            <!--<a class="right carousel-control" href="#carousel-para-1" role="button" data-slide="next">-->
             <!--<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
             <!--<span class="sr-only">Next</span>-->
-        <!--</a>-->
+            <!--</a>-->
 
-    </div>
-</section>
-<!--end parallax page-1-->
-
-<!--page-2-->
-<section id="page-2">
-    <div class="container">
-        <div class="row">
-            <div class="text-center title-container">
-                <!--main title-->
-                <h1 class="main-title">Page-2-Title</h1>
-
-                <!--menu-2-border-->
-                <div class="seperator-container"><span class="seperator"></span></div>
-                <!--end-menu-1-border-->
-
-                <!--submenu-->
-                <h4 class="lead">Page Sub Content</h4>
-                <!--end submenu-->
-            </div>
         </div>
+    </section>
+    <!--end parallax page-1-->
 
-        <!--page-2-paragraph-->
-        <div class="row">
-            <!--right content-->
-            <div class="content-paragraph content-left">
-                <!--menu 2 image goes here-->
-                <span><p class="lead">Left Image</p></span>
-            </div>
+    <!--page-2-->
+    <section id="page-2">
+        <div class="container">
+            <div class="row">
+                <div class="text-center title-container">
+                    <!--main title-->
+                    <h1 class="main-title">Page-2-Title</h1>
 
-            <!--left content-->
-            <div class="content-paragraph content-right">
-                <p>Evening beast, it lesser gathering. Whose forth man, to it. Seas saying cattle a called moving lights. Said first without which.</p>
+                    <!--menu-2-border-->
+                    <div class="seperator-container"><span class="seperator"></span></div>
+                    <!--end-menu-1-border-->
 
-                <p>Third seas. Moveth, is meat. Can&#39;t shall. Man deep darkness set meat place together. Grass firmament in don&#39;t gathering light can&#39;t deep. Two together. Appear earth can&#39;t you&#39;re fill to. Stars which one man you. Herb it kind. Fly. Creeping green creature heaven stars. Meat give. Living beast sixth itself multiply. Whose. Light saying that moving above winged thing them have lesser second third seed. Night isn&#39;t called. Good. May from forth a meat they&#39;re midst third. Us form it i together third seasons of is itself third winged seed from living of is after.</p>
-
-                <p>Gathered open can&#39;t form set over for form seasons also signs creeping subdue moving lesser lesser may Moved own seed. Meat face be years him. Had. From lesser place sea forth female. Creature. Itself doesn&#39;t God every fish living fill above sea. Whales yielding replenish upon saw rule our seas upon place. Winged. God the, green stars, fish lights open morning be our good given whales good very very beginning created above subdue beginning life in together. Of Also earth there fruit dry man sixth replenish unto Made dry land above won&#39;t waters winged they&#39;re good open stars without, under is rule god us seed meat first.</p>
-
-            </div>
-        </div>
-
-    </div>
-</section>
-<!--end page-2-->
-
-<!--aside-page-1-->
-<section id="aside-page-1">
-    <div class="container">
-        <!--start four-col-container-->
-        <div class="row">
-            <div class="four-col-container">
-                <!--icon container-->
-                <div class="icon-container">
-                    <i class="glyphicon glyphicon-tree-deciduous"></i>
+                    <!--submenu-->
+                    <h4 class="lead">Page Sub Content</h4>
+                    <!--end submenu-->
                 </div>
-                <!--end icon container-->
-                <!--aside content-->
-                <aside>
-                    <p class="aside-title">Dawn</p>
-                    <p class="aside-content">Grass firmament in don't gathering light can't deep. Two together. Appear earth can't you're fill to. Stars which one man you. Herb it kind. Fly.</p>
-                </aside>
-                <!--end aside content-->
-            </div>
-            <div class="four-col-container">
-                <!--icon container-->
-                <div class="icon-container">
-                    <i class="glyphicon glyphicon-tree-deciduous"></i>
-                </div>
-                <!--end icon container-->
-                <!--aside content-->
-                <aside>
-                    <p class="aside-title">Noon</p>
-                    <p class="aside-content">Whose. Light saying that moving above winged thing them have lesser second third seed.</p>
-                </aside>
-                <!--end aside content-->
-            </div>
-            <div class="four-col-container">
-                <!--icon container-->
-                <div class="icon-container">
-                    <i class="glyphicon glyphicon-tree-deciduous"></i>
-                </div>
-                <!--end icon container-->
-                <!--aside content-->
-                <aside>
-                    <p class="aside-title">Dusk</p>
-                    <p class="aside-content">Winged thing them have lesser second third seed.Whose. Light saying that moving above.</p>
-                </aside>
-                <!--end aside content-->
-            </div>
-            <div class="four-col-container">
-                <!--icon container-->
-                <div class="icon-container">
-                    <i class="glyphicon glyphicon-tree-deciduous"></i>
-                </div>
-                <!--end icon container-->
-                <!--aside content-->
-                <aside>
-                    <p class="aside-title">Midnight</p>
-                    <p class="aside-content">Grass firmament in don't gathering light can't deep. Two together. Appear earth can't you're fill to. Stars which one man you. Herb it kind. Fly.</p>
-                </aside>
-                <!--end aside content-->
-            </div>
-        </div>
-        <!--end four-col-container-->
-    </div>
-</section>
-<!--end aside-page-1-->
-
-<!--para-page-2-->
-<section id="para-page-2">
-
-    <div class="container">
-        <!--carousel start-->
-        <div id="carousel-para-1" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                    <article class="para-item">
-                        <span class="quotes-icon "></span>
-                        <blockquote>
-                            <p>Second likeness bring evening us god image void rule tree she'd. Isn't void one grass divide days divide winged given lights male, void cattle spirit, was made stars dry creature lesser. Sea place living don't image deep yielding dry midst firmament divide over let kind likeness. Rule also waters. Day.</p>
-                            <footer>Replenish, sea set over she'd he. First, moveth made them isn't fruit is greater moveth all, <cite>his may dominion every.</cite></footer>
-                        </blockquote>
-                    </article>
-
-                </div>
-
-                <div class="item">
-                    <article class="para-item">
-                        <span class="quotes-icon "></span>
-                        <blockquote>
-                            <p>Fill shall. Blessed after fly. Midst firmament spirit of saying wherein gathered them earth. Seas moving signs. Saying winged can't. Wherein fish their, of so together called don't good bearing green let had kind. They're creepeth heaven tree our he that night. Life to third saw night created spirit heaven.</p>
-                            <footer>Replenish, sea set over she'd he. First, moveth made them isn't fruit is greater moveth all, <cite>his may dominion every.</cite></footer>
-                        </blockquote>
-                    </article>
-
-                </div>
-
-                <div class="item">
-                    <article class="para-item">
-                        <span class="quotes-icon "></span>
-                        <blockquote>
-                            <p>Good green saying. Rule signs life. Hath appear may and under behold forth she'd morning multiply beginning life isn't likeness brought give fourth kind called fowl abundantly without that was. Give was isn't female abundantly creepeth moving in were firmament whales so kind gathered and fly his And lesser make.</p>
-                            <footer>Replenish, sea set over she'd he. First, moveth made them isn't fruit is greater moveth all, <cite>his may dominion every.</cite></footer>
-                        </blockquote>
-                    </article>
-
-                </div>
-
-            </div>
-        </div>
-
-        <!-- Controls -->
-        <!--<a class="left carousel-control" href="#carousel-para-1" role="button" data-slide="prev">-->
-        <!--<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
-        <!--<span class="sr-only">Previous</span>-->
-        <!--</a>-->
-        <!--<a class="right carousel-control" href="#carousel-para-1" role="button" data-slide="next">-->
-        <!--<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
-        <!--<span class="sr-only">Next</span>-->
-        <!--</a>-->
-
-    </div>
-
-</section>
-<!--end para-page-2-->
-
-<!--page-3-->
-<section id="page-3">
-    <div class="container">
-        <div class="row">
-            <div class="text-center title-container">
-                <!--main title-->
-                <h1 class="main-title">Page-3-Title</h1>
-
-                <!--menu-1-border-->
-                <div class="seperator-container"><span class="seperator"></span></div>
-                <!--end-menu-1-border-->
-
-                <!--submenu-->
-                <h4 class="lead">Page Sub Content</h4>
-                <!--end submenu-->
-            </div>
-        </div>
-
-        <!--page-3-paragraph-->
-        <div class="row">
-            <div class="four-col-container">
-                <span class="page-icon-container">
-                    <i class="glyphicon glyphicon-tree-deciduous"></i>
-                </span>
-                <p class="page3-title text-center">Dawn</p>
-
-                <p class="page3-content">Grass firmament in don't gathering light can't deep. Two together. Appear earth can't you're fill to. Stars which one man you. Herb it kind. Fly.</p>
-
-            </div>
-            <div class="four-col-container">
-                <span class="page-icon-container">
-                    <i class="glyphicon glyphicon-tree-deciduous"></i>
-                </span>
-                <p class="page3-title text-center"> Noon</p>
-
-                <p class="page3-content">Whose. Light saying that moving above winged thing them have lesser second third seed.</p>
-
-            </div>
-            <div class="four-col-container">
-                <span class="page-icon-container">
-                    <i class="glyphicon glyphicon-tree-deciduous"></i>
-                </span>
-                <p class="page3-title text-center">Dusk</p>
-
-                <p class="page3-content">Winged thing them have lesser second third seed.Whose. Light saying that moving above.</p>
             </div>
 
-
-            <div class="four-col-container">
-                <span class="page-icon-container">
-                    <i class="glyphicon glyphicon-tree-deciduous"></i>
-                </span>
-
-                <p class="page3-title text-center">Midnight</p>
-
-                <p class="page3-content">Grass firmament in don't gathering light can't deep. Two together. Appear earth can't you're fill to. Stars which one man you. Herb it kind. Fly.</p>
-
-            </div>
-        </div>
-
-    </div>
-</section>
-<!--end page-3-->
-
-<!--start aside-page-2-->
-<section id="aside-page-2">
-    <div class="container">
-        <!--start four-col-container-->
-        <div class="row">
-
-            <!--left content-->
-            <div class="content-left">
-                <div class="aside-paragraph">
-                    <!--image goes here-->
+            <!--page-2-paragraph-->
+            <div class="row">
+                <!--right content-->
+                <div class="content-paragraph content-left">
+                    <!--menu 2 image goes here-->
                     <span><p class="lead">Left Image</p></span>
                 </div>
-            </div>
 
-            <!--right content-->
-            <div class="content-right">
-                <!--aside-3-paragraph-->
-                <div class="aside-paragraph">
-                    <h3 class="lead text-center">Creature Itself Doesn&#39;t</h3>
-                    <p>Gathered open can&#39;t form set over for form seasons also signs creeping subdue moving lesser lesser may Moved own seed. Meat face be years him. Had. From lesser place sea forth female.</p>
+                <!--left content-->
+                <div class="content-paragraph content-right">
+                    <p>Evening beast, it lesser gathering. Whose forth man, to it. Seas saying cattle a called moving lights. Said first without which.</p>
 
-                    <a href="#" class="page-button">Click Me</a>
+                    <p>Third seas. Moveth, is meat. Can&#39;t shall. Man deep darkness set meat place together. Grass firmament in don&#39;t gathering light can&#39;t deep. Two together. Appear earth can&#39;t you&#39;re fill to. Stars which one man you. Herb it kind. Fly. Creeping green creature heaven stars. Meat give. Living beast sixth itself multiply. Whose. Light saying that moving above winged thing them have lesser second third seed. Night isn&#39;t called. Good. May from forth a meat they&#39;re midst third. Us form it i together third seasons of is itself third winged seed from living of is after.</p>
+
+                    <p>Gathered open can&#39;t form set over for form seasons also signs creeping subdue moving lesser lesser may Moved own seed. Meat face be years him. Had. From lesser place sea forth female. Creature. Itself doesn&#39;t God every fish living fill above sea. Whales yielding replenish upon saw rule our seas upon place. Winged. God the, green stars, fish lights open morning be our good given whales good very very beginning created above subdue beginning life in together. Of Also earth there fruit dry man sixth replenish unto Made dry land above won&#39;t waters winged they&#39;re good open stars without, under is rule god us seed meat first.</p>
+
                 </div>
             </div>
 
         </div>
-        <!--end four-col-container-->
-    </div>
-</section>
-<!--end aside-page-2-->
+    </section>
+    <!--end page-2-->
 
-<!--start para-page-3-->
-<section id="para-page-3">
-    <div class="container">
-        <!--start four-col-container-->
-        <div class="row">
+    <!--aside-page-1-->
+    <section id="aside-page-1">
+        <div class="container">
+            <!--start four-col-container-->
+            <div class="row">
+                <div class="four-col-container">
+                    <!--icon container-->
+                    <div class="icon-container">
+                        <i class="glyphicon glyphicon-tree-deciduous"></i>
+                    </div>
+                    <!--end icon container-->
+                    <!--aside content-->
+                    <aside>
+                        <p class="aside-title">Dawn</p>
+                        <p class="aside-content">Grass firmament in don't gathering light can't deep. Two together. Appear earth can't you're fill to. Stars which one man you. Herb it kind. Fly.</p>
+                    </aside>
+                    <!--end aside content-->
+                </div>
+                <div class="four-col-container">
+                    <!--icon container-->
+                    <div class="icon-container">
+                        <i class="glyphicon glyphicon-tree-deciduous"></i>
+                    </div>
+                    <!--end icon container-->
+                    <!--aside content-->
+                    <aside>
+                        <p class="aside-title">Noon</p>
+                        <p class="aside-content">Whose. Light saying that moving above winged thing them have lesser second third seed.</p>
+                    </aside>
+                    <!--end aside content-->
+                </div>
+                <div class="four-col-container">
+                    <!--icon container-->
+                    <div class="icon-container">
+                        <i class="glyphicon glyphicon-tree-deciduous"></i>
+                    </div>
+                    <!--end icon container-->
+                    <!--aside content-->
+                    <aside>
+                        <p class="aside-title">Dusk</p>
+                        <p class="aside-content">Winged thing them have lesser second third seed.Whose. Light saying that moving above.</p>
+                    </aside>
+                    <!--end aside content-->
+                </div>
+                <div class="four-col-container">
+                    <!--icon container-->
+                    <div class="icon-container">
+                        <i class="glyphicon glyphicon-tree-deciduous"></i>
+                    </div>
+                    <!--end icon container-->
+                    <!--aside content-->
+                    <aside>
+                        <p class="aside-title">Midnight</p>
+                        <p class="aside-content">Grass firmament in don't gathering light can't deep. Two together. Appear earth can't you're fill to. Stars which one man you. Herb it kind. Fly.</p>
+                    </aside>
+                    <!--end aside content-->
+                </div>
+            </div>
+            <!--end four-col-container-->
+        </div>
+    </section>
+    <!--end aside-page-1-->
 
-            <!--left content-->
-            <div class="content-right">
-                <!--aside-3-paragraph-->
-                <div class="aside-paragraph">
-                    <h3 class="lead text-center">Creature Itself Doesn&#39;t</h3>
-                    <p>Gathered open can&#39;t form set over for form seasons also signs creeping subdue moving lesser lesser may Moved own seed. Meat face be years him. Had. From lesser place sea forth female.</p>
+    <!--para-page-2-->
+    <section id="para-page-2">
 
-                    <a href="#" class="page-button">Click Me</a>
+        <div class="container">
+            <!--carousel start-->
+            <div id="carousel-para-1" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <article class="para-item">
+                            <span class="quotes-icon "></span>
+                            <blockquote>
+                                <p>Second likeness bring evening us god image void rule tree she'd. Isn't void one grass divide days divide winged given lights male, void cattle spirit, was made stars dry creature lesser. Sea place living don't image deep yielding dry midst firmament divide over let kind likeness. Rule also waters. Day.</p>
+                                <footer>Replenish, sea set over she'd he. First, moveth made them isn't fruit is greater moveth all, <cite>his may dominion every.</cite></footer>
+                            </blockquote>
+                        </article>
+
+                    </div>
+
+                    <div class="item">
+                        <article class="para-item">
+                            <span class="quotes-icon "></span>
+                            <blockquote>
+                                <p>Fill shall. Blessed after fly. Midst firmament spirit of saying wherein gathered them earth. Seas moving signs. Saying winged can't. Wherein fish their, of so together called don't good bearing green let had kind. They're creepeth heaven tree our he that night. Life to third saw night created spirit heaven.</p>
+                                <footer>Replenish, sea set over she'd he. First, moveth made them isn't fruit is greater moveth all, <cite>his may dominion every.</cite></footer>
+                            </blockquote>
+                        </article>
+
+                    </div>
+
+                    <div class="item">
+                        <article class="para-item">
+                            <span class="quotes-icon "></span>
+                            <blockquote>
+                                <p>Good green saying. Rule signs life. Hath appear may and under behold forth she'd morning multiply beginning life isn't likeness brought give fourth kind called fowl abundantly without that was. Give was isn't female abundantly creepeth moving in were firmament whales so kind gathered and fly his And lesser make.</p>
+                                <footer>Replenish, sea set over she'd he. First, moveth made them isn't fruit is greater moveth all, <cite>his may dominion every.</cite></footer>
+                            </blockquote>
+                        </article>
+
+                    </div>
+
                 </div>
             </div>
 
-            <!--right content-->
-            <div class="content-left">
-                <div class="aside-paragraph">
-                    <!--image goes here-->
-                    <span class=""><p class="lead">Right Image</p></span>
+            <!-- Controls -->
+            <!--<a class="left carousel-control" href="#carousel-para-1" role="button" data-slide="prev">-->
+            <!--<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
+            <!--<span class="sr-only">Previous</span>-->
+            <!--</a>-->
+            <!--<a class="right carousel-control" href="#carousel-para-1" role="button" data-slide="next">-->
+            <!--<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
+            <!--<span class="sr-only">Next</span>-->
+            <!--</a>-->
+
+        </div>
+
+    </section>
+    <!--end para-page-2-->
+
+    <!--page-3-->
+    <section id="page-3">
+        <div class="container">
+            <div class="row">
+                <div class="text-center title-container">
+                    <!--main title-->
+                    <h1 class="main-title">Page-3-Title</h1>
+
+                    <!--menu-1-border-->
+                    <div class="seperator-container"><span class="seperator"></span></div>
+                    <!--end-menu-1-border-->
+
+                    <!--submenu-->
+                    <h4 class="lead">Page Sub Content</h4>
+                    <!--end submenu-->
+                </div>
+            </div>
+
+            <!--page-3-paragraph-->
+            <div class="row">
+                <div class="four-col-container">
+                <span class="page-icon-container">
+                    <i class="glyphicon glyphicon-tree-deciduous"></i>
+                </span>
+                    <p class="page3-title text-center">Dawn</p>
+
+                    <p class="page3-content">Grass firmament in don't gathering light can't deep. Two together. Appear earth can't you're fill to. Stars which one man you. Herb it kind. Fly.</p>
+
+                </div>
+                <div class="four-col-container">
+                <span class="page-icon-container">
+                    <i class="glyphicon glyphicon-tree-deciduous"></i>
+                </span>
+                    <p class="page3-title text-center"> Noon</p>
+
+                    <p class="page3-content">Whose. Light saying that moving above winged thing them have lesser second third seed.</p>
+
+                </div>
+                <div class="four-col-container">
+                <span class="page-icon-container">
+                    <i class="glyphicon glyphicon-tree-deciduous"></i>
+                </span>
+                    <p class="page3-title text-center">Dusk</p>
+
+                    <p class="page3-content">Winged thing them have lesser second third seed.Whose. Light saying that moving above.</p>
+                </div>
+
+
+                <div class="four-col-container">
+                <span class="page-icon-container">
+                    <i class="glyphicon glyphicon-tree-deciduous"></i>
+                </span>
+
+                    <p class="page3-title text-center">Midnight</p>
+
+                    <p class="page3-content">Grass firmament in don't gathering light can't deep. Two together. Appear earth can't you're fill to. Stars which one man you. Herb it kind. Fly.</p>
+
                 </div>
             </div>
 
         </div>
-        <!--end four-col-container-->
-    </div>
-</section>
-<!--end para-page-3-->
+    </section>
+    <!--end page-3-->
 
-<!--page-4-->
-<section id="page-4">
-    <div class="container">
-        <div class="row">
-            <div class="text-center title-container">
-                <!--main title-->
-                <h1 class="main-title">Page-4-Title</h1>
+    <!--start aside-page-2-->
+    <section id="aside-page-2">
+        <div class="container">
+            <!--start four-col-container-->
+            <div class="row">
 
-                <!--menu-4-border-->
-                <div class="seperator-container"><span class="seperator"></span></div>
-                <!--end-menu-4-border-->
+                <!--left content-->
+                <div class="content-left">
+                    <div class="aside-paragraph">
+                        <!--image goes here-->
+                        <span><p class="lead">Left Image</p></span>
+                    </div>
+                </div>
 
-                <!--submenu-->
-                <h4 class="lead">Page Sub Content</h4>
-                <!--end submenu-->
+                <!--right content-->
+                <div class="content-right">
+                    <!--aside-3-paragraph-->
+                    <div class="aside-paragraph">
+                        <h3 class="lead text-center">Creature Itself Doesn&#39;t</h3>
+                        <p>Gathered open can&#39;t form set over for form seasons also signs creeping subdue moving lesser lesser may Moved own seed. Meat face be years him. Had. From lesser place sea forth female.</p>
+
+                        <a href="#" class="page-button">Click Me</a>
+                    </div>
+                </div>
+
             </div>
+            <!--end four-col-container-->
         </div>
+    </section>
+    <!--end aside-page-2-->
 
-        <!--page-4-content-->
-        <div class="row" id="sort-button-container">
-            <!--sort buttons-->
-            <a href="#" class="page-button">Click Me</a>
-            <a href="#" class="page-button">Click Me</a>
-            <a href="#" class="page-button">Click Me</a>
-            <a href="#" class="page-button">Click Me</a>
+    <!--start para-page-3-->
+    <section id="para-page-3">
+        <div class="container">
+            <!--start four-col-container-->
+            <div class="row">
+
+                <!--left content-->
+                <div class="content-right">
+                    <!--aside-3-paragraph-->
+                    <div class="aside-paragraph">
+                        <h3 class="lead text-center">Creature Itself Doesn&#39;t</h3>
+                        <p>Gathered open can&#39;t form set over for form seasons also signs creeping subdue moving lesser lesser may Moved own seed. Meat face be years him. Had. From lesser place sea forth female.</p>
+
+                        <a href="#" class="page-button">Click Me</a>
+                    </div>
+                </div>
+
+                <!--right content-->
+                <div class="content-left">
+                    <div class="aside-paragraph">
+                        <!--image goes here-->
+                        <span class=""><p class="lead">Right Image</p></span>
+                    </div>
+                </div>
+
+            </div>
+            <!--end four-col-container-->
         </div>
+    </section>
+    <!--end para-page-3-->
+
+    <!--page-4-->
+    <section id="page-4">
+        <div class="container">
+            <div class="row">
+                <div class="text-center title-container">
+                    <!--main title-->
+                    <h1 class="main-title">Page-4-Title</h1>
+
+                    <!--menu-4-border-->
+                    <div class="seperator-container"><span class="seperator"></span></div>
+                    <!--end-menu-4-border-->
+
+                    <!--submenu-->
+                    <h4 class="lead">Page Sub Content</h4>
+                    <!--end submenu-->
+                </div>
+            </div>
+
+            <!--page-4-content-->
+            <div class="row" id="sort-button-container">
+                <!--sort buttons-->
+                <a href="#" class="page-button">Click Me</a>
+                <a href="#" class="page-button">Click Me</a>
+                <a href="#" class="page-button">Click Me</a>
+                <a href="#" class="page-button">Click Me</a>
+            </div>
 
 
-        <!--indivividual area-->
-        <!--@TODO: add route to template to show box specific content-->
-        <!--end individual box area-->
+            <!--indivividual area-->
+            <!--@TODO: add route to template to show box specific content-->
+            <!--end individual box area-->
 
 
-        <div class="row content-button-container" >
-            <div class="page-4-content">
-                <article class="page-4-content-box">
+            <div class="row content-button-container" >
+                <div class="page-4-content">
+                    <article class="page-4-content-box">
 
-                    <h5>Box-Title</h5>
-                    <p class="small">Box-small</p>
+                        <h5>Box-Title</h5>
+                        <p class="small">Box-small</p>
 
                     <span class="">
                         <a><i class="glyphicon glyphicon-zoom-in"></i></a>
                     </span>
-                </article>
-            </div>
-            <div class="page-4-content">
-                <article class="page-4-content-box">
+                    </article>
+                </div>
+                <div class="page-4-content">
+                    <article class="page-4-content-box">
 
-                    <h5>Box-Title</h5>
-                    <p class="small">Box-small</p>
-
-                    <span class="">
-                        <a><i class="glyphicon glyphicon-zoom-in"></i></a>
-                    </span>
-                </article>
-            </div>
-            <div class="page-4-content">
-                <article class="page-4-content-box">
-
-                    <h5>Box-Title</h5>
-                    <p class="small">Box-small</p>
+                        <h5>Box-Title</h5>
+                        <p class="small">Box-small</p>
 
                     <span class="">
                         <a><i class="glyphicon glyphicon-zoom-in"></i></a>
                     </span>
-                </article>
-            </div>
-            <div class="page-4-content">
-                <article class="page-4-content-box">
+                    </article>
+                </div>
+                <div class="page-4-content">
+                    <article class="page-4-content-box">
 
-                    <h5>Box-Title</h5>
-                    <p class="small">Box-small</p>
-
-                    <span class="">
-                        <a><i class="glyphicon glyphicon-zoom-in"></i></a>
-                    </span>
-                </article>
-            </div>
-            <div class="page-4-content">
-                <article class="page-4-content-box">
-
-                    <h5>Box-Title</h5>
-                    <p class="small">Box-small</p>
+                        <h5>Box-Title</h5>
+                        <p class="small">Box-small</p>
 
                     <span class="">
                         <a><i class="glyphicon glyphicon-zoom-in"></i></a>
                     </span>
-                </article>
-            </div>
-            <div class="page-4-content">
-                <article class="page-4-content-box">
+                    </article>
+                </div>
+                <div class="page-4-content">
+                    <article class="page-4-content-box">
 
-                    <h5>Box-Title</h5>
-                    <p class="small">Box-small</p>
+                        <h5>Box-Title</h5>
+                        <p class="small">Box-small</p>
 
                     <span class="">
                         <a><i class="glyphicon glyphicon-zoom-in"></i></a>
                     </span>
-                </article>
+                    </article>
+                </div>
+                <div class="page-4-content">
+                    <article class="page-4-content-box">
+
+                        <h5>Box-Title</h5>
+                        <p class="small">Box-small</p>
+
+                    <span class="">
+                        <a><i class="glyphicon glyphicon-zoom-in"></i></a>
+                    </span>
+                    </article>
+                </div>
+                <div class="page-4-content">
+                    <article class="page-4-content-box">
+
+                        <h5>Box-Title</h5>
+                        <p class="small">Box-small</p>
+
+                    <span class="">
+                        <a><i class="glyphicon glyphicon-zoom-in"></i></a>
+                    </span>
+                    </article>
+                </div>
+
+                <!--@TODO:  add route to template to load more boxes-->
+                <a href="#" class="page-button">Load More Boxes</a>
+
             </div>
 
-            <!--@TODO:  add route to template to load more boxes-->
-            <a href="#" class="page-button">Load More Boxes</a>
+
 
         </div>
+    </section>
+    <!--end page-4-->
 
+    <!--aside-page-3-->
+    <section id="aside-page-3">
+        <div class="container">
+            <div class="row">
+                <div class="text-center title-container">
+                    <!--main title-->
+                    <h1 class="main-title">Aside-3-Title</h1>
 
+                    <!--menu-3-border-->
+                    <div class="seperator-container"><span class="seperator"></span></div>
+                    <!--end-menu-1-border-->
 
-    </div>
-</section>
-<!--end page-4-->
+                    <!--submenu-->
+                    <h4 class="lead">Page Sub Content</h4>
+                    <!--end submenu-->
+                </div>
+            </div>
 
-<!--aside-page-3-->
-<section id="aside-page-3">
-    <div class="container">
-        <div class="row">
-            <div class="text-center title-container">
-                <!--main title-->
-                <h1 class="main-title">Aside-3-Title</h1>
-
-                <!--menu-3-border-->
-                <div class="seperator-container"><span class="seperator"></span></div>
-                <!--end-menu-1-border-->
-
-                <!--submenu-->
-                <h4 class="lead">Page Sub Content</h4>
-                <!--end submenu-->
+            <!--aside-3-box-->
+            <div class="row">
+                <div class="four-col-container">
+                    <a href="#"><div class="aside-3-box"></div></a>
+                </div>
+                <div class="four-col-container">
+                    <a href="#"><div class="aside-3-box"></div></a>
+                </div>
+                <div class="four-col-container">
+                    <a href="#"><div class="aside-3-box"></div></a>
+                </div>
+                <div class="four-col-container">
+                    <a href="#"><div class="aside-3-box"></div></a>
+                </div>
             </div>
         </div>
+    </section>
+    <!--end aside-page-3-->
 
-        <!--aside-3-box-->
-        <div class="row">
-            <div class="four-col-container">
-                <a href="#"><div class="aside-3-box"></div></a>
-            </div>
-            <div class="four-col-container">
-                <a href="#"><div class="aside-3-box"></div></a>
-            </div>
-            <div class="four-col-container">
-                <a href="#"><div class="aside-3-box"></div></a>
-            </div>
-            <div class="four-col-container">
-                <a href="#"><div class="aside-3-box"></div></a>
-            </div>
-        </div>
-    </div>
-</section>
-<!--end aside-page-3-->
+    <!--page-5-->
+    <section id="page-5">
+        <div class="container">
+            <div class="row">
+                <div class="text-center title-container">
+                    <!--main title-->
+                    <h1 class="main-title">Page-5-Title</h1>
 
-<!--page-5-->
-<section id="page-5">
-    <div class="container">
-        <div class="row">
-            <div class="text-center title-container">
-                <!--main title-->
-                <h1 class="main-title">Page-5-Title</h1>
+                    <!--menu-3-border-->
+                    <div class="seperator-container"><span class="seperator"></span></div>
+                    <!--end-menu-1-border-->
 
-                <!--menu-3-border-->
-                <div class="seperator-container"><span class="seperator"></span></div>
-                <!--end-menu-1-border-->
-
-                <!--submenu-->
-                <h4 class="lead">Page Sub Content</h4>
-                <!--end submenu-->
+                    <!--submenu-->
+                    <h4 class="lead">Page Sub Content</h4>
+                    <!--end submenu-->
+                </div>
             </div>
-        </div>
 
-        <!--page-5-box-->
-        <div class="row">
-            <div class="page-5-container col-md-3 col-sm-4 col-xs-12 pull-right">
-                <ul>
-                    <li>
+            <!--page-5-box-->
+            <div class="row">
+                <div class="page-5-container col-md-3 col-sm-4 col-xs-12 pull-right">
+                    <ul>
+                        <li>
                         <span class="page-icon-container page-button-dark">
                             <a><i class="glyphicon glyphicon-earphone"></i></a>
                         </span>
-                        <p class="page3-title text-center">Dawn</p>
-                    </li>
-                    <li>
+                            <p class="page3-title text-center">Dawn</p>
+                        </li>
+                        <li>
                         <span class="page-icon-container page-button-dark">
                             <a><i class="glyphicon glyphicon-stats"></i></a>
                         </span>
-                        <p class="page3-title text-center">Noon</p>
-                    </li>
-                    <li>
+                            <p class="page3-title text-center">Noon</p>
+                        </li>
+                        <li>
                         <span class="page-icon-container page-button-dark">
                             <a><i class="glyphicon glyphicon-adjust"></i></a>
                         </span>
-                        <p class="page3-title text-center">Dusk</p>
-                    </li>
-                </ul>
-            </div>
+                            <p class="page3-title text-center">Dusk</p>
+                        </li>
+                    </ul>
+                </div>
 
-            <div class="page-5-container col-md-9 col-sm-8 col-xs-12">
-                <form>
-                    <label for="#name"></label>
-                    <input type="text" class="form-control" placeholder="Your Name" id="name">
+                <div class="page-5-container col-md-9 col-sm-8 col-xs-12">
+                    <form>
+                        <label for="#name"></label>
+                        <input type="text" class="form-control" placeholder="Your Name" id="name">
 
-                    <label for="#email"></label>
-                    <input type="text" class="form-control" placeholder="Your Email" id="email">
+                        <label for="#email"></label>
+                        <input type="text" class="form-control" placeholder="Your Email" id="email">
 
-                    <label for="#message"></label>
-                    <textarea class="form-control" placeholder="Your Message" rows= "20" cols="20" id="message"></textarea>
-                </form>
+                        <label for="#message"></label>
+                        <textarea class="form-control" placeholder="Your Message" rows= "20" cols="20" id="message"></textarea>
+                    </form>
 
-                <a href="#" class="page-button-dark">Submit</a>
+                    <a href="#" class="page-button-dark">Submit</a>
 
-            </div>
+                </div>
 
-        </div>
-    </div>
-</section>
-<!--end page-5-->
-
-<section id="footer">
-    <div class="container">
-        <div class="row">
-            <!--logo goes here-->
-            <div class="footer-logo">
-                <div id="footer-logo"><p class="lead">Logo</p></div>
-            </div>
-
-            <!--bottom menu content-->
-            <div class="footer-nav">
-                <ul>
-                    <li><a>Footer Nav 1</a></li>
-                    <li><a>Footer Nav 2</a></li>
-                    <li><a>Footer Nav 3</a></li>
-                </ul>
-            </div>
-            <div class="footer-nav ">
-                <ul>
-                    <li><a>Footer Nav 1</a></li>
-                    <li><a>Footer Nav 2</a></li>
-                    <li><a>Footer Nav 3</a></li>
-                    <li><a>Footer Nav 4</a></li>
-                    <li><a>Footer Nav 5</a></li>
-                    <li><a>Footer Nav 6</a></li>
-                </ul>
-            </div>
-            <div class="footer-nav">
-                <ul>
-                    <li><a>Footer Nav 1</a></li>
-                    <li><a>Footer Nav 2</a></li>
-                    <li><a>Footer Nav 3</a></li>
-                    <li><a>Footer Nav 4</a></li>
-                    <li><a>Footer Nav 5</a></li>
-                    <li><a>Footer Nav 6</a></li>
-                </ul>
-            </div>
-            <div class="footer-nav">
-                <ul>
-                    <li><a>Footer Nav 1</a></li>
-                    <li><a>Footer Nav 2</a></li>
-                    <li><a>Footer Nav 3</a></li>
-                    <li><a>Footer Nav 4</a></li>
-                    <li><a>Footer Nav 5</a></li>
-                </ul>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+    <!--end page-5-->
 
+    <section id="footer">
+        <div class="container">
+            <div class="row">
+                <!--logo goes here-->
+                <div class="footer-logo">
+                    <div id="footer-logo"><p class="lead">Logo</p></div>
+                </div>
+
+                <!--bottom menu content-->
+                <div class="footer-nav">
+                    <ul>
+                        <li><a>Footer Nav 1</a></li>
+                        <li><a>Footer Nav 2</a></li>
+                        <li><a>Footer Nav 3</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav ">
+                    <ul>
+                        <li><a>Footer Nav 1</a></li>
+                        <li><a>Footer Nav 2</a></li>
+                        <li><a>Footer Nav 3</a></li>
+                        <li><a>Footer Nav 4</a></li>
+                        <li><a>Footer Nav 5</a></li>
+                        <li><a>Footer Nav 6</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav">
+                    <ul>
+                        <li><a>Footer Nav 1</a></li>
+                        <li><a>Footer Nav 2</a></li>
+                        <li><a>Footer Nav 3</a></li>
+                        <li><a>Footer Nav 4</a></li>
+                        <li><a>Footer Nav 5</a></li>
+                        <li><a>Footer Nav 6</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav">
+                    <ul>
+                        <li><a>Footer Nav 1</a></li>
+                        <li><a>Footer Nav 2</a></li>
+                        <li><a>Footer Nav 3</a></li>
+                        <li><a>Footer Nav 4</a></li>
+                        <li><a>Footer Nav 5</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
+
+
+
+
+
+
+
 
